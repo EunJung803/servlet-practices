@@ -2,10 +2,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.poscodx</groupId>
-	<artifactId>servlet-practices</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<parent>
+		<groupId>com.poscodx</groupId>
+		<artifactId>servlet-practices</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>guestbook2</artifactId>
+	<packaging>war</packaging>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,12 +17,16 @@
 		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>guestbook2</finalName>
+	</build>
 	
-	<modules>
-		<module>helloweb</module>
-		<module>emaillist1</module>
-		<module>guestbook1</module>
-		<module>emaillist2</module>
-		<module>guestbook2</module>
-	</modules>
 </project>
