@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.poscodx</groupId>
+		<artifactId>servlet-practices</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jstlel</artifactId>
+	<packaging>war</packaging>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+		
+	<dependencies>
+		<!-- jstl -->
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+
+		<!-- servlet -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>4.0.1</version>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet.jsp</groupId>
+		    <artifactId>jsp-api</artifactId>
+		    <version>2.2</version>
+		    <scope>provided</scope>
+		</dependency>		
+	</dependencies>
+		
+	<build>
+		<finalName>jstlel</finalName>
+	</build>	
+</project>

@@ -21,6 +21,7 @@
 		<module>guestbook1</module>
 		<module>emaillist2</module>
 		<module>guestbook2</module>
+		<module>jstlel</module>
 	</modules>
 	
 	<build>
