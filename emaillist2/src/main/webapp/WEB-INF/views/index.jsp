@@ -1,4 +1,4 @@
-﻿<%@ page import="emaillist.vo.EmaillistVo" %>
+<%@ page import="emaillist.vo.EmaillistVo" %>
 <%@ page import="java.util.List" %>
 <%@ page import="emaillist.dao.EmaillistDao" %>
 
